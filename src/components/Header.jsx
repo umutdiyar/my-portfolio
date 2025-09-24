@@ -19,7 +19,7 @@ const Header = () => {
   const navItems = [
     { name: "Ana Sayfa", href: "#home" },
     { name: "Hakkımda", href: "#about" },
-    { name: "Yetenekler", href: "#skills" },
+    { name: "Yetenekler", href: "#talents" },
     { name: "Deneyim", href: "#experience" },
     { name: "Eğitim", href: "#education" },
     { name: "Projeler", href: "#projects" },
