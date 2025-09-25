@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Talents from "./components/Talents";
 import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
 
 import { ThemeProvider } from "./components/ThemeProvider";
 import "./App.css";
@@ -18,6 +20,8 @@ const App = () => {
           <About />
           <Talents />
           <Experience />
+          <Education />
+          <Projects />
         </main>
       </div>
     </ThemeProvider>
