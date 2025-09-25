@@ -44,17 +44,17 @@ function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {stats.map((stat, index) => (
               <Card
                 key={index}
-                className="text-center p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700"
+                className="hover:shadow-lg py-4 hover:scale-105 transition-all duration-300 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700"
               >
-                <CardContent>
+                <CardContent className="flex flex-col items-center justify-center text-center h-full p-6">
                   <div className="text-3xl font-bold text-blue-600 mb-2">
                     {stat.value}
                   </div>
-                  <div className="dark:text-gray-400 font-medium text-gray-600 ">
+                  <div className="dark:text-gray-400 font-medium text-gray-600">
                     {stat.label}
                   </div>
                 </CardContent>

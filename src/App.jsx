@@ -6,6 +6,7 @@ import Talents from "./components/Talents";
 import Experience from "./components/Experience";
 
 import { ThemeProvider } from "./components/ThemeProvider";
+import "./App.css";
 
 const App = () => {
   return (

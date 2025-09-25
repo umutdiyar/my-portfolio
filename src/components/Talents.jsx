@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { skills } from "../data/mockData";
-import { Code, Palette, Database, Wrench, TrendingUp } from "lucide-react";
+import {
+  Code,
+  Database,
+  Wrench,
+  TrendingUp,
+  Cpu,
+  BadgeCheckIcon,
+} from "lucide-react";
 
 function Talents() {
   const [isVisible, setIsVisible] = useState(false);
@@ -57,7 +64,7 @@ function Talents() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 bg-white dark:bg-gray-900 px-4 py-2 rounded-full shadow-lg mb-4">
-            <Palette className="text-teal-600" size={20} />
+            <Cpu className="text-teal-600" size={20} />
             <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
               Teknolojiler
             </span>
@@ -71,9 +78,9 @@ function Talents() {
           </p>
         </div>
 
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-12 ">
           <div className="bg-white dark:bg-gray-900 p-2 rounded-full shadow-xl border border-gray-200 dark:border-gray-700">
-            <div className="flex space-x-1">
+            <div className="flex sm:space-x-1 justify-center gap-2 sm:flex-nowrap flex-wrap">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
@@ -95,7 +102,7 @@ function Talents() {
         <div
           className={
             filteredSkills.length === 1
-              ? "flex justify-center "
+              ? "flex justify-center"
               : "grid gap-8 md:grid-cols-2 lg:grid-cols-3"
           }
         >
@@ -126,7 +133,8 @@ function Talents() {
                       variant="secondary"
                       className="bg-gradient-to-r from-teal-100 to-green-100 dark:from-teal-900 dark:to-green-900 text-teal-800 dark:text-teal-200"
                     >
-                      {skillCategory.items.length} teknoloji
+                      <BadgeCheckIcon className="w-4 mr-2" />
+                      {skillCategory.items.length} Teknoloji
                     </Badge>
                   }
                 </div>
