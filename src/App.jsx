@@ -6,9 +6,12 @@ import Talents from "./components/Talents";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 import { ThemeProvider } from "./components/ThemeProvider";
 import "./App.css";
+
+import { Toaster } from "./components/ui/sonner";
 
 const App = () => {
   return (
@@ -22,7 +25,9 @@ const App = () => {
           <Experience />
           <Education />
           <Projects />
+          <Contact />
         </main>
+        <Toaster />
       </div>
     </ThemeProvider>
   );

@@ -122,3 +122,80 @@ export const certificates = [
     credentialId: "Turkcell Akademi - 2023",
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: "E-Ticaret Web Uygulaması",
+    description:
+      "Kendi geliştirdiğim HTML, CSS, JavaScript ve C# tabanlı e-ticaret uygulaması. Ürünleri görüntüleyip sepete eklemeye olanak tanır ve temel e-ticaret işleyişini öğretir.",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    github: "https://github.com/umutdiyar/eCommerce-webApp",
+    demo: "#",
+    technologies: ["HTML5", "TailwindCSS", "JavaScript", "JQuery", "C#"],
+    category: "Full Stack",
+  },
+  {
+    id: 2,
+    title: "Hava Durumu Web Uygulaması",
+    description:
+      "APİ entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
+    image:
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
+    github: "https://github.com/umutdiyar/weather-app",
+    demo: "https://weather-app-umutdiyar.vercel.app/",
+    technologies: [
+      "TailwindCSS",
+      "JavaScript",
+      "Vue.js",
+      "Axios",
+      "Weather API",
+    ],
+    category: "Frontend",
+  },
+  {
+    id: 3,
+    title: "Film Arama Web Uygulaması",
+    description:
+      "React ile geliştirdiğim modern ve kullanıcı dostu bir film arama uygulaması. Gerçek zamanlı arama ve filtreleme özellikleri sunar.",
+    image:
+      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop&crop=top",
+    github: "https://github.com/umutdiyar/portfolio",
+    demo: "https://moviefinder-umutdiyar.vercel.app/",
+    technologies: ["TailwindCSS", "JavaScript", "React.js", "Lucide React"],
+    category: "Frontend",
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description:
+      "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+    github: "https://github.com/umutdiyar/portfolio",
+    demo: "var",
+    technologies: [
+      "TailwindCSS",
+      "JavaScript",
+      "React.js",
+      "Framer Motion",
+      "ShadcnUi",
+      "Lucide React",
+    ],
+    category: "Frontend",
+  },
+];
+
+export const personalInfo = {
+  name: "Umut Diyar Balcı",
+  title: "Junior Yazılım Geliştirici",
+  email: "umutdiyarbalci@gmail.com",
+  phone: "+90 551 167 25 80",
+  location: "İstanbul, Türkiye",
+  github: "https://github.com/umutdiyar",
+  linkedin: "https://www.linkedin.com/in/umut-diyar-balc%C4%B1/",
+  age: 19,
+  languages: ["Türkçe (Ana Dil)", "İngilizce (A2)"],
+  interests: ["Web Geliştirme", "Teknoloji Blogları", "Müzik", "Kitap Okuma"],
+};
