@@ -9,9 +9,10 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./components/ThemeProvider";
-import "./App.css";
-
 import { Toaster } from "./components/ui/sonner";
+import BackToTop from "./components/BackToTop";
+
+import "./App.css";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Contact />
         </main>
         <Footer />
+        <BackToTop />
         <Toaster />
       </div>
     </ThemeProvider>

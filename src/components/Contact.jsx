@@ -37,8 +37,17 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      toast.error("Lütfen tüm alanları doldurun!");
+      return;
+    }
+    setIsSubmitting(true);
     try {
       await sendEmail(formRef);
       toast.success("Mesajınız başarıyla gönderildi!");
@@ -85,6 +94,12 @@ const Contact = () => {
       label: "LinkedIn",
       href: personalInfo.linkedin,
       color: "hover:text-blue-600",
+    },
+    {
+      icon: Mail,
+      href: `mailto:${personalInfo.email}`,
+      label: "Email",
+      color: "hover:text-red-500",
     },
   ];
 
@@ -210,7 +225,6 @@ const Contact = () => {
                       id="name"
                       name="name"
                       type="text"
-                      required
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Adınız ve soyadınız"
@@ -228,7 +242,6 @@ const Contact = () => {
                       id="email"
                       name="email"
                       type="email"
-                      required
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="email@example.com"
@@ -248,7 +261,6 @@ const Contact = () => {
                     id="subject"
                     name="subject"
                     type="text"
-                    required
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="Mesajınızın konusu"
@@ -266,7 +278,6 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    required
                     rows={6}
                     value={formData.message}
                     onChange={handleInputChange}
