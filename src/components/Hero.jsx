@@ -85,7 +85,7 @@ const Hero = () => {
               href="https://github.com/umutdiyar"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-110 transition-all duration-200"
+              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white  hover:scale-110 transition-all duration-200"
               aria-label="GitHub Profile"
             >
               <Github size={24} />
@@ -94,14 +94,14 @@ const Hero = () => {
               href="https://www.linkedin.com/in/umut-diyar-balc%C4%B1/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-110 transition-all duration-200"
+              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-110 transition-all duration-200"
               aria-label="LinkedIn Profile"
             >
               <Linkedin size={24} />
             </a>
             <a
               href="mailto:umutdiyarbalci@gmail.com"
-              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 hover:scale-110 transition-all duration-200"
+              className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:bg-gray-600 hover:scale-110 transition-all duration-200"
               aria-label="Email"
             >
               <Mail size={24} />

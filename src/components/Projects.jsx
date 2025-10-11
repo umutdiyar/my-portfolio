@@ -26,10 +26,10 @@ function Projects() {
           </p>
         </div>
 
-        <div className="flex justify-center mb-12">
-          <div className="flex items-center space-x-2 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg">
+        <div className="flex justify-center mb-12 px-6 sm:px-0">
+          <div className="flex flex-wrap gap-2 justify-center items-center space-x-2 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg ">
             <Filter
-              className="text-gray-600 dark:text-gray-300 ml-2"
+              className="text-gray-600 dark:text-gray-300 ml-2 flex-shrink-0 hidden sm:block"
               size={20}
             />
             {categories.map((category) => (
@@ -98,7 +98,10 @@ function Projects() {
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <Badge variant="outline" className="text-xs">
+                  <Badge
+                    variant="secondary"
+                    className="bg-gradient-to-r from-teal-100 to-green-100 dark:from-teal-900 dark:to-green-900 text-teal-800 dark:text-teal-200"
+                  >
                     {project.category}
                   </Badge>
                 </div>
@@ -124,7 +127,7 @@ function Projects() {
                     asChild
                     variant="outline"
                     size="sm"
-                    className="flex-1"
+                    className="flex-1 mt-0.5 dark:bg-transparent dark:hover:bg-gray-900"
                   >
                     <a
                       href={project.github}
@@ -138,13 +141,13 @@ function Projects() {
                   {project.demo && project.demo !== "#" && (
                     <Button
                       asChild
-                      size="sm"
-                      className="flex-1 bg-blue-600 hover:bg-blue-700"
+                      className="flex-1 bg-gradient-to-r from-teal-600 to-blue-600 hover:from-teal-700 hover:to-blue-700 text-white py-3 font-medium transition-all duration-200 hover:scale-105"
                     >
                       <a
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="flex items-center justify-center"
                       >
                         <ExternalLink className="mr-2" size={16} />
                         Demo

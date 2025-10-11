@@ -112,7 +112,7 @@ function Education() {
                           {edu.title}
                         </h4>
 
-                        <h5 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                        <h5 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3 ">
                           {edu.company}
                         </h5>
 
@@ -179,7 +179,7 @@ function Education() {
                             <Button
                               variant="outline"
                               size="sm"
-                              className="ml-4 hover:bg-teal-50 dark:hover:bg-teal-900/30 border-teal-300 dark:border-teal-600"
+                              className="ml-4 hover:bg-teal-50 dark:hover:bg-teal-900/30 dark:bg-gray-800 border-teal-300 dark:border-teal-600"
                             >
                               <Eye size={16} className="mr-1" />
                               Görüntüle

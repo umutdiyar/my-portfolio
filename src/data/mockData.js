@@ -110,11 +110,18 @@ export const experiences = [
 
 export const certificates = [
   {
-    name: "Başlangıç Seviye Frontend Web Development",
+    name: "Orta Seviye Frontend Web Development Patikası",
+    issuer: "Patika Academy",
+    date: "2025",
+    credentialId: "PATIKA-2025",
+  },
+  {
+    name: "Başlangıç Seviye Frontend Web Development Patikası",
     issuer: "Patika Academy",
     date: "2024",
     credentialId: "PATIKA-2024",
   },
+
   {
     name: "Web Programlama 101-201-301",
     issuer: "Turkcell Geleceği Yazanlar",
@@ -170,7 +177,7 @@ export const projects = [
       "React ile geliştirdiğim modern ve kullanıcı dostu bir film arama uygulaması. Gerçek zamanlı arama ve filtreleme özellikleri sunar.",
     image:
       "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&h=600&fit=crop&crop=top",
-    github: "https://github.com/umutdiyar/portfolio",
+    github: "https://github.com/umutdiyar/movie-finder",
     demo: "https://moviefinder-umutdiyar.vercel.app/",
     technologies: [
       "TailwindCSS",
@@ -183,12 +190,12 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
+    title: "Portfolyo Web Uygulaması",
     description:
       "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
     image:
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
-    github: "https://github.com/umutdiyar/portfolio",
+    github: "https://github.com/umutdiyar/my-portfolio",
     demo: "var",
     technologies: [
       "TailwindCSS",

@@ -128,7 +128,7 @@ const Contact = () => {
                 {contactInfo.map((info, index) => (
                   <Card
                     key={index}
-                    className="hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"
+                    className="group hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br dark:from-gray-900 dark:to-gray-800"
                   >
                     <CardContent className="p-4">
                       <a
@@ -136,7 +136,10 @@ const Contact = () => {
                         className="flex items-center space-x-4 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                       >
                         <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-full">
-                          <info.icon className="text-blue-600" size={24} />
+                          <info.icon
+                            className="text-blue-600 dark:text-blue-400 dark:group-hover:text-blue-100 transition-colors duration-200"
+                            size={24}
+                          />
                         </div>
                         <div>
                           <div className="font-medium">{info.label}</div>
@@ -206,15 +209,20 @@ const Contact = () => {
           </div>
 
           {/* Form */}
+          {/* Form Kartı */}
           <Card className="shadow-xl bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
-            <CardContent className="p-8 ">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <CardContent className="px-8 py-16 flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Mesaj Gönder
               </h3>
 
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="space-y-6 max-w-lg mx-auto w-full"
+              >
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div>
+                  <div className="flex flex-col">
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
@@ -228,10 +236,11 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Adınız ve soyadınız"
-                      className="w-full dark:bg-transparent border-0 border-b-2"
+                      className="w-full h-12 dark:bg-transparent rounded-lg"
                     />
                   </div>
-                  <div>
+
+                  <div className="flex flex-col">
                     <label
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
@@ -245,12 +254,12 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="email@example.com"
-                      className="w-full dark:bg-transparent border-0 border-b-2"
+                      className="w-full h-12 dark:bg-transparent rounded-lg"
                     />
                   </div>
                 </div>
 
-                <div>
+                <div className="flex flex-col">
                   <label
                     htmlFor="subject"
                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
@@ -264,11 +273,11 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="Mesajınızın konusu"
-                    className="w-full dark:bg-transparent border-0 border-b-2"
+                    className="w-full h-12 dark:bg-transparent rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="flex flex-col">
                   <label
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
@@ -282,7 +291,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Mesajınızı buraya yazın..."
-                    className="w-full resize-none dark:bg-transparent border-0 border-b-2"
+                    className="w-full min-h-[150px] dark:bg-transparent rounded-lg resize-none"
                   />
                 </div>
 

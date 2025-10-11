@@ -18,7 +18,7 @@ function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 dark:text-white">
             Hakkımda
           </h2>
-          <div className="w-28 h-1 rounded bg-gradient-to-r from-teal-600 to-green-600 mx-auto"></div>
+          <div className="w-28 h-1 rounded bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto"></div>
         </div>
 
         <div className="grid gap-12 items-center lg:grid-cols-2">
