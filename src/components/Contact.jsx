@@ -8,7 +8,6 @@ import { personalInfo } from "../data/mockData";
 
 import {
   Mail,
-  Phone,
   MapPin,
   Github,
   Linkedin,
@@ -67,12 +66,6 @@ const Contact = () => {
       label: "Email",
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
-    },
-    {
-      icon: Phone,
-      label: "Telefon",
-      value: personalInfo.phone,
-      href: `tel:${personalInfo.phone}`,
     },
     {
       icon: MapPin,
@@ -213,7 +206,7 @@ const Contact = () => {
           <Card className="shadow-xl bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
             <CardContent className="px-8 py-16 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-                Mesaj Gönder
+                Bana Ulaşın
               </h3>
 
               <form

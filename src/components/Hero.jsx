@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-green-400/10 to-teal-400/10 dark:from-green-600/10 dark:to-teal-600/10 rounded-full animate-pulse delay-700"></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div className="container mx-auto px-6 text-center relative z-10 top-4">
         <div className="animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             Merhaba, Ben{" "}
@@ -129,10 +129,10 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute inset-x-0 flex justify-center animate-bounce">
+        <div className="relative inset-x-0 flex justify-center animate-bounce top-8">
           <button
             onClick={() => scrollToSection("#about")}
-            className="p-2 sm:p-3 my-8 rounded-full text-gray-600 dark:text-gray-400 
+            className="p-2 sm:p-3 rounded-full text-gray-600 dark:text-gray-400 
                        hover:text-blue-600 dark:hover:text-blue-400 
                        transition-colors duration-200"
             aria-label="Scroll down"

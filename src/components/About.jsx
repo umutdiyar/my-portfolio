@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+// import { Download } from "lucide-react";
 
 function About() {
   const stats = [
@@ -25,16 +25,22 @@ function About() {
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Merhaba! Ben Umut Diyar Balcı, web geliştirme alanında kendimi
+                Merhaba! Ben Umut Diyar Balcı, web geliştirme alanında kendini
                 sürekli geliştiren genç bir yazılım geliştiricisiyim. Okan
                 Üniversitesi Bilgisayar Programcılığı bölümünde eğitimime devam
-                ederken, pratik deneyimlerimi de arttırıyorum.
+                ederken, pratik deneyimlerimi de artırıyorum.
               </p>
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
                 Frontend teknolojileri konusunda özellikle React.js ve Vue.js
                 üzerinde yoğunlaşıyorum. Modern web uygulamaları geliştirme,
                 kullanıcı deneyimi optimizasyonu ve temiz kod yazma
-                prensiplerini benimseyen bir geliştiriciyim.
+                prensiplerini benimseyen bir geliştiriciyim. Aynı zamanda,
+                üniversitemdeki Google Developer Student Club (GDSC) bünyesinde
+                Sponsorluk Ekibi’nde aktif olarak görev alıyorum. Etkinliklerin
+                planlanması, şirketlerle iş birlikleri kurulması ve topluluk
+                çalışmalarının yürütülmesi gibi süreçlerde aktif rol
+                üstleniyorum. Bu deneyim, iletişim ve organizasyon becerilerimi
+                geliştirmeme yardımcı oluyor.
               </p>
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
                 Teknoloji bloglarını takip etmek, yeni teknolojileri öğrenmek ve
@@ -62,12 +68,12 @@ function About() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center content-center items-center mx-auto my-8">
+        {/* <div className="flex justify-center content-center items-center mx-auto my-8">
           <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105">
             <Download className="mr-2" size={20} />
             CV İndir
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
