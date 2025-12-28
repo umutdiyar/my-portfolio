@@ -110,16 +110,16 @@ export const experiences = [
 
 export const certificates = [
   {
-    name: "Orta Seviye Frontend Web Development Patikası",
-    issuer: "Patika Academy",
-    date: "2025",
-    credentialId: "PATIKA-2025",
+    name: "Yükseköğretimde Yapay Zeka Teknolojileri Konferansı",
+    issuer: "İstanbul Okan Üniversitesi",
+    date: "5 Kasım 2025",
+    credentialId: "OKAN-2025",
   },
   {
-    name: "Başlangıç Seviye Frontend Web Development Patikası",
+    name: "Başlangıç ve Orta Seviye Frontend Web Development Patikası",
     issuer: "Patika Academy",
-    date: "2024",
-    credentialId: "PATIKA-2024",
+    date: "2024 / 2025",
+    credentialId: "PATIKA-2024 / 2025",
   },
 
   {
