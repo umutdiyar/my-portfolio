@@ -146,7 +146,9 @@ function Talents() {
                       <div className="flex justify-between items-center mb-3">
                         <div className="flex items-center space-x-3">
                           <div className="text-2xl transform group-hover/skill:scale-110 transition-transform duration-200">
-                            {skill.icon}
+                            <i
+                              className={`${skill.icon} text-3xl dark:invert group-hover/skill:scale-110 transition-transform`}
+                            ></i>
                           </div>
                           <span className="font-semibold text-gray-800 dark:text-gray-200">
                             {skill.name}

@@ -2,30 +2,55 @@ export const skills = [
   {
     category: "Frontend",
     items: [
-      { name: "HTML5", level: 95, icon: "🌐" },
-      { name: "CSS3", level: 90, icon: "🎨" },
-      { name: "JavaScript", level: 85, icon: "⚡" },
-      { name: "React.js", level: 80, icon: "⚛️" },
-      { name: "Vue.js", level: 85, icon: "🔧" },
-      { name: "TailwindCSS", level: 90, icon: "💎" },
+      { name: "HTML5", level: 95, icon: "devicon-html5-plain colored" },
+      { name: "CSS3", level: 90, icon: "devicon-css3-plain colored" },
+      {
+        name: "JavaScript",
+        level: 85,
+        icon: "devicon-javascript-plain colored",
+      },
+      { name: "React.js", level: 80, icon: "devicon-react-plain colored" },
+      { name: "Vue.js", level: 85, icon: "devicon-vuejs-plain colored" },
+      {
+        name: "TailwindCSS",
+        level: 90,
+        icon: "devicon-tailwindcss-plain colored",
+      },
     ],
   },
   {
     category: "Backend",
     items: [
-      { name: "C#", level: 75, icon: "🔷" },
-      { name: ".NET Core", level: 85, icon: "🌐" },
-      { name: "ASP.NET MVC", level: 90, icon: "🏗️" },
-      { name: "SQL", level: 80, icon: "🗄️" },
+      {
+        name: "Node.js",
+        level: 75,
+        icon: "devicon-nodejs-plain-wordmark colored",
+      },
+      { name: "C#", level: 85, icon: "devicon-csharp-plain colored" },
+      {
+        name: "ASP .NET Core MVC",
+        level: 90,
+        icon: "devicon-dotnetcore-plain colored",
+      },
+      {
+        name: "SQL",
+        level: 80,
+        icon: "devicon-microsoftsqlserver-plain-wordmark colored",
+      },
     ],
   },
   {
     category: "Tools",
     items: [
-      { name: "Git", level: 80, icon: "📋" },
-      { name: "GitHub", level: 85, icon: "🐙" },
-      { name: "VS Code", level: 95, icon: "💻" },
-      { name: "Figma", level: 60, icon: "🎨" },
+      { name: "Git", level: 80, icon: "devicon-git-plain colored" },
+      { name: "GitHub", level: 85, icon: "devicon-github-plain colored" },
+      { name: "VS Code", level: 95, icon: "devicon-vscode-plain colored" },
+      {
+        name: "Visual Studio",
+        level: 95,
+        icon: "devicon-visualstudio-plain colored",
+      },
+      { name: "Figma", level: 70, icon: "devicon-figma-plain colored" },
     ],
   },
 ];
@@ -196,7 +221,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
     github: "https://github.com/umutdiyar/my-portfolio",
-    demo: "var",
+    demo: "https://umutdiyarbalci.vercel.app/",
     technologies: [
       "TailwindCSS",
       "JavaScript",

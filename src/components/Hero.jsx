@@ -74,7 +74,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Web geliştirme alanında kendimi sürekli geliştiren, modern
+            Web geliştirme alanında kendini sürekli geliştiren, modern
             teknolojilerle kullanıcı dostu uygulamalar oluşturan bir yazılım
             geliştiricisiyim.
           </p>

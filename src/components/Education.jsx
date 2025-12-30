@@ -99,7 +99,7 @@ function Education() {
                       <GraduationCap className="text-white" size={24} />
                     </div>
 
-                    <Card className="ml-20 hover:shadow-xl transition-all duration-300 hover:scale-105 flex-1  bg-gradient-to-br dark:from-gray-800 dark:to-gray-700">
+                    <Card className="hover:shadow-xl ml-20 max-[390px]:w-64 transition-all duration-300 hover:scale-105 bg-gradient-to-br dark:from-gray-800 dark:to-gray-700">
                       <CardContent className="p-6">
                         <div className="flex items-center mb-3">
                           <Calendar className="text-green-600 mr-2" size={16} />
@@ -139,8 +139,8 @@ function Education() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-                <Award className="mr-3 text-teal-600" size={28} />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center justify-center md:justify-start">
+                <Award className="mr-3 text-teal-600 " size={28} />
                 Sertifikalar
               </h3>
 
@@ -148,63 +148,77 @@ function Education() {
                 {certificates.map((cert, index) => (
                   <Card
                     key={index}
-                    className="hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-teal-50 to-green-50 dark:from-teal-900/20 dark:to-green-900/20 border border-teal-200 dark:border-teal-700"
+                    className="
+          w-full
+          overflow-hidden
+          hover:shadow-xl transition-all duration-300 hover:scale-105
+          bg-gradient-to-br from-teal-50 to-green-50
+          dark:from-teal-900/20 dark:to-green-900/20
+          border border-teal-200 dark:border-teal-700
+        "
                   >
                     <CardContent className="p-6">
-                      <div className="flex items-start justify-between">
-                        <div className="flex items-start space-x-4 flex-1">
-                          <div className="p-3 bg-teal-100 dark:bg-teal-900/50 rounded-full">
+                      {/* WRAPPER */}
+                      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        {/* LEFT */}
+                        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full">
+                          <div className="p-3 bg-teal-100 dark:bg-teal-900/50 rounded-full shrink-0">
                             <Award className="text-teal-600" size={24} />
                           </div>
-                          <div className="flex-1">
-                            <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+
+                          <div className="flex-1 w-full text-center sm:text-left">
+                            <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                               {cert.name}
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300 font-medium mb-1">
+
+                            <p className="text-gray-700 dark:text-gray-300 font-medium mb-2">
                               {cert.issuer}
                             </p>
-                            <div className="flex items-center justify-between mb-3">
+
+                            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-2">
                               <span className="text-sm text-gray-600 dark:text-gray-400">
                                 {cert.date}
                               </span>
-                              <Badge variant="outline" className="text-xs">
+
+                              <Badge
+                                variant="outline"
+                                className="text-xs max-w-full break-words"
+                              >
                                 {cert.credentialId}
                               </Badge>
                             </div>
                           </div>
                         </div>
 
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              className="ml-4 hover:bg-teal-50 dark:hover:bg-teal-900/30 dark:bg-gray-800 border-teal-300 dark:border-teal-600"
-                            >
-                              <Eye size={16} className="mr-1" />
-                              Görüntüle
-                            </Button>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-4xl">
-                            <DialogHeader>
-                              <DialogTitle className="flex items-center space-x-2">
-                                <Award className="text-teal-600" size={20} />
-                                <span>Sertifika Görüntüleyici</span>
-                              </DialogTitle>
-                            </DialogHeader>
-                            <CertificateViewer
-                              certificate={cert}
-                              onClose={() => setSelectedCertificate(null)}
-                            />
-                          </DialogContent>
-                        </Dialog>
+                        {/* BUTTON */}
+                        <div className="w-full md:w-auto flex justify-center md:justify-end">
+                          <Dialog>
+                            <DialogTrigger asChild>
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                className="w-full md:w-auto"
+                              >
+                                <Eye size={16} className="mr-1" />
+                                Görüntüle
+                              </Button>
+                            </DialogTrigger>
+
+                            <DialogContent className="max-w-4xl">
+                              <DialogHeader>
+                                <DialogTitle>Sertifika</DialogTitle>
+                              </DialogHeader>
+                              <CertificateViewer certificate={cert} />
+                            </DialogContent>
+                          </Dialog>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
                 ))}
 
-                {/* Add more certificates placeholder */}
-                <Card className="border-2 border-dashed border-teal-300 dark:border-teal-600 hover:border-teal-400 dark:hover:border-teal-400 transition-colors duration-300 bg-white dark:bg-gray-800">
+                {/* PLACEHOLDER */}
+                <Card className="border-2 border-dashed border-teal-300 dark:border-teal-600 bg-white dark:bg-gray-800">
                   <CardContent className="p-6 text-center">
                     <Award className="mx-auto text-teal-400 mb-3" size={32} />
                     <p className="text-gray-600 dark:text-gray-300 font-medium">
