@@ -1,3 +1,7 @@
+import eCommerceApp from "../assets/eCommerce-webApp-Screenshot.png";
+import weatherApp from "../assets/weatherApp.png";
+import myPortfolio from "../assets/my-portfolio-photo.png";
+
 export const skills = [
   {
     category: "Frontend",
@@ -161,8 +165,7 @@ export const projects = [
     title: "E-Ticaret Web Uygulaması",
     description:
       "Kendi geliştirdiğim HTML, CSS, JavaScript ve C# tabanlı e-ticaret uygulaması. Ürünleri görüntüleyip sepete eklemeye olanak tanır ve temel e-ticaret işleyişini öğretir.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    image: eCommerceApp,
     github: "https://github.com/umutdiyar/eCommerce-webApp",
     demo: "#",
     technologies: [
@@ -182,8 +185,7 @@ export const projects = [
     title: "Hava Durumu Web Uygulaması",
     description:
       "APİ entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
-    image:
-      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
+    image: weatherApp,
     github: "https://github.com/umutdiyar/weather-app",
     demo: "https://weather-app-umutdiyar.vercel.app/",
     technologies: [
@@ -218,8 +220,7 @@ export const projects = [
     title: "Portfolyo Web Uygulaması",
     description:
       "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
-    image:
-      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+    image: myPortfolio,
     github: "https://github.com/umutdiyar/my-portfolio",
     demo: "https://umutdiyarbalci.vercel.app/",
     technologies: [

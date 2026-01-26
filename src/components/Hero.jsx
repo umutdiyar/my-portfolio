@@ -9,6 +9,7 @@ const Hero = () => {
 
   const texts = [
     "Junior Yazılım Geliştirici",
+    "Full Stack Developer",
     "Frontend Developer",
     "React.js Developer",
     "Vue.js Developer",
