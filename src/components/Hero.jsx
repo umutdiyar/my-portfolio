@@ -8,7 +8,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const texts = [
-    "Junior Yazılım Geliştirici",
+    "Yazılım Geliştirici",
     "Full Stack Developer",
     "Frontend Developer",
     "React.js Developer",
@@ -34,7 +34,7 @@ const Hero = () => {
           }
         }
       },
-      isDeleting ? 50 : 100
+      isDeleting ? 50 : 100,
     );
 
     return () => clearTimeout(timeout);
