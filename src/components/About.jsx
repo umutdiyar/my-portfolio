@@ -26,26 +26,27 @@ function About() {
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
                 Merhaba! Ben Umut Diyar Balcı, web geliştirme alanında kendini
-                sürekli geliştiren genç bir yazılım geliştiricisiyim. Okan
+                sürekli geliştiren bir yazılım geliştiricisiyim. Okan
                 Üniversitesi Bilgisayar Programcılığı bölümünde eğitimime devam
-                ederken, pratik deneyimlerimi de artırıyorum.
+                ederken aynı zamanda pratik deneyimlerimi aktif olarak
+                artırıyorum.
               </p>
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Frontend teknolojileri konusunda özellikle React.js ve Vue.js
-                üzerinde yoğunlaşıyorum. Modern web uygulamaları geliştirme,
-                kullanıcı deneyimi optimizasyonu ve temiz kod yazma
-                prensiplerini benimseyen bir geliştiriciyim. Aynı zamanda,
-                üniversitemdeki Google Developer Student Club (GDSC) bünyesinde
-                Sponsorluk Ekibi’nde aktif olarak görev alıyorum. Etkinliklerin
-                planlanması, şirketlerle iş birlikleri kurulması ve topluluk
-                çalışmalarının yürütülmesi gibi süreçlerde aktif rol
-                üstleniyorum. Bu deneyim, iletişim ve organizasyon becerilerimi
-                geliştirmeme yardımcı oluyor.
+                Frontend teknolojileri tarafında özellikle React.js ve Vue.js
+                üzerine odaklanıyor, modern ve kullanıcı odaklı web uygulamaları
+                geliştirmeye önem veriyorum. Temiz kod yazımı, performans
+                optimizasyonu ve kullanıcı deneyimi benim için geliştirme
+                sürecinin temel parçalarıdır. Aynı zamanda, şu anda Okan
+                Üniversitesi bünyesindeki AWS Cloud Club’ta Sponsorluk Ekibi’nde
+                görev alıyorum. Bu rol kapsamında etkinlikler için sponsorluk
+                süreçlerinde aktif yer alıyor, şirketlerle iletişim kurma, iş
+                birlikleri geliştirme ve organizasyon süreçlerine katkı
+                sağlıyorum.
               </p>
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Teknoloji bloglarını takip etmek, yeni teknolojileri öğrenmek ve
-                çeşitli projeler üzerinde çalışmak beni motive eden ana unsurlar
-                arasında yer alıyor.
+                Yeni teknolojileri takip etmek, farklı projeler üzerinde
+                çalışmak ve kendimi sürekli geliştirmek motivasyonumun temelini
+                oluşturuyor.
               </p>
             </div>
           </div>

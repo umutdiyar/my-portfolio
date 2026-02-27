@@ -57,7 +57,7 @@ const Footer = () => {
               Umut Diyar Balcı
             </h3>
             <p className="leading-relaxed text-gray-400">
-              Junior Yazılım Geliştirici olarak modern web teknolojileri ile
+              Genç bir yazılım geliştirici olarak modern web teknolojileri ile
               kullanıcı dostu uygulamalar geliştiriyorum.
             </p>
           </div>

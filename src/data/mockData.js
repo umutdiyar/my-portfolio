@@ -63,10 +63,28 @@ export const experiences = [
   {
     id: 1,
     title: "Core Team Member",
-    company: "GDG On Campus Istanbul Okan University",
-    period: "Eylül 2025 - Halen",
+    company: "AWS Cloud Club Okan University",
+    period: "Şubat 2026 - Halen",
     description:
-      "GDG On Campus Okan topluluğunda’da Core Team üyesi olarak görev alıyorum.",
+      "AWS Cloud Club bünyesinde sponsorluk ekibinde aktif rol alarak, etkinlikler için şirketlerle iletişim kurma, iş birlikleri geliştirme ve sponsorluk süreçlerini yönetme sorumluluğunu üstleniyorum.",
+    type: "work",
+    technologies: [
+      "AWS Cloud",
+      "Sponsorship",
+      "Teamwork",
+      "Partnerships",
+      "Networking",
+      "Communication",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Core Team Member",
+    company: "GDG On Campus Istanbul Okan University",
+    period: "Eylül 2025 - Şubat 2026",
+    description:
+      "GDG On Campus Okan topluluğunda’da etkinlikler için sponsorluk süreçlerinde aktif rol alarak şirketlerle iletişim, teklif hazırlama ve iş birlikleri geliştirme süreçlerine katkı sağladım.",
     type: "work",
     technologies: [
       "Teamwork",
@@ -76,7 +94,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "BT Destek Uzmanı",
     company: "Omreon Bilişim Teknolojileri",
     period: "Temmuz 2024 - Ekim 2024",
@@ -86,7 +104,7 @@ export const experiences = [
     technologies: ["System Administration", "Windows Server", "Network"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Stajyer Yazılım Geliştirici",
     company: "Beezsoft Yazılım Danışmanlık",
     period: "Eylül 2023 - Haziran 2024",
@@ -103,7 +121,7 @@ export const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Bilgisayar Programcılığı",
     company: "Okan Üniversitesi",
     period: "Eylül 2025 - Halen",
@@ -119,7 +137,7 @@ export const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Bilişim Teknolojileri - Yazılım Geliştirme",
     company: "Tuzla Mesleki ve Teknik Anadolu Lisesi",
     period: "Eylül 2020 - Haziran 2024",

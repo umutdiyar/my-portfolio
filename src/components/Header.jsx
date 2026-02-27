@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || isMenuOpen
           ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
