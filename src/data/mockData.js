@@ -1,7 +1,7 @@
 import eCommerceApp from "../assets/eCommerce-webApp-Screenshot.png";
 import weatherApp from "../assets/weatherApp.png";
 import myPortfolio from "../assets/my-portfolio-photo.png";
-import PulseBoard from "../assets/pulseboard.png";
+import pulseBoard from "../assets/pulseboard.png";
 
 export const skills = [
   {
@@ -184,7 +184,7 @@ export const projects = [
     title: "PulseBoard",
     description:
       "Görev yönetimi, sprint takibi ve mini CRM özellikleri sunan çok kullanıcılı bir SaaS çalışma alanı platformu. Şu anda aktif olarak geliştirilme aşamasındadır.",
-    image: PulseBoard,
+    image: pulseBoard,
     github: "https://github.com/umutdiyar/pulseboard",
     demo: "#",
     technologies: [
