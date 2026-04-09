@@ -1,6 +1,7 @@
 import eCommerceApp from "../assets/eCommerce-webApp-Screenshot.png";
 import weatherApp from "../assets/weatherApp.png";
 import myPortfolio from "../assets/my-portfolio-photo.png";
+import PulseBoard from "../assets/pulseboard.png";
 
 export const skills = [
   {
@@ -180,26 +181,42 @@ export const certificates = [
 export const projects = [
   {
     id: 1,
-    title: "E-Ticaret Web Uygulaması",
+    title: "PulseBoard",
     description:
-      "Kendi geliştirdiğim HTML, CSS, JavaScript ve C# tabanlı e-ticaret uygulaması. Ürünleri görüntüleyip sepete eklemeye olanak tanır ve temel e-ticaret işleyişini öğretir.",
-    image: eCommerceApp,
-    github: "https://github.com/umutdiyar/eCommerce-webApp",
+      "Görev yönetimi, sprint takibi ve mini CRM özellikleri sunan çok kullanıcılı bir SaaS çalışma alanı platformu. Şu anda aktif olarak geliştirilme aşamasındadır.",
+    image: PulseBoard,
+    github: "https://github.com/umutdiyar/pulseboard",
     demo: "#",
     technologies: [
-      "HTML5",
+      "Next.js",
+      "TypeScript",
       "TailwindCSS",
-      "JavaScript",
-      "JQuery",
-      "C#",
-      ".NET 8",
-      "ASP.NET MVC",
-      "Entity Framework Core",
+      "ASP.NET Core",
+      "PostgreSQL",
+      "Docker",
     ],
-    category: "Full Stack",
+    category: "Ongoing",
   },
   {
     id: 2,
+    title: "Portfolyo Web Uygulaması",
+    description:
+      "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
+    image: myPortfolio,
+    github: "https://github.com/umutdiyar/my-portfolio",
+    demo: "https://umutdiyarbalci.vercel.app/",
+    technologies: [
+      "TailwindCSS",
+      "JavaScript",
+      "React.js",
+      "Framer Motion",
+      "ShadcnUi",
+      "Lucide React",
+    ],
+    category: "Frontend",
+  },
+  {
+    id: 3,
     title: "Hava Durumu Web Uygulaması",
     description:
       "APİ entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
@@ -216,7 +233,7 @@ export const projects = [
     category: "Frontend",
   },
   {
-    id: 3,
+    id: 4,
     title: "Film Arama Web Uygulaması",
     description:
       "React ile geliştirdiğim modern ve kullanıcı dostu bir film arama uygulaması. Gerçek zamanlı arama ve filtreleme özellikleri sunar.",
@@ -234,22 +251,24 @@ export const projects = [
     category: "Frontend",
   },
   {
-    id: 4,
-    title: "Portfolyo Web Uygulaması",
+    id: 5,
+    title: "E-Ticaret Web Uygulaması",
     description:
-      "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
-    image: myPortfolio,
-    github: "https://github.com/umutdiyar/my-portfolio",
-    demo: "https://umutdiyarbalci.vercel.app/",
+      "Kendi geliştirdiğim HTML, CSS, JavaScript ve C# tabanlı e-ticaret uygulaması. Ürünleri görüntüleyip sepete eklemeye olanak tanır ve temel e-ticaret işleyişini öğretir.",
+    image: eCommerceApp,
+    github: "https://github.com/umutdiyar/eCommerce-webApp",
+    demo: "#",
     technologies: [
+      "HTML5",
       "TailwindCSS",
       "JavaScript",
-      "React.js",
-      "Framer Motion",
-      "ShadcnUi",
-      "Lucide React",
+      "JQuery",
+      "C#",
+      ".NET 8",
+      "ASP.NET MVC",
+      "Entity Framework Core",
     ],
-    category: "Frontend",
+    category: "Full Stack",
   },
 ];
 
