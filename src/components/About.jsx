@@ -37,11 +37,11 @@ function About() {
                 geliştirmeye önem veriyorum. Temiz kod yazımı, performans
                 optimizasyonu ve kullanıcı deneyimi benim için geliştirme
                 sürecinin temel parçalarıdır. Aynı zamanda, şu anda Okan
-                Üniversitesi bünyesindeki AWS Cloud Club’ta Sponsorluk Ekibi’nde
-                görev alıyorum. Bu rol kapsamında etkinlikler için sponsorluk
-                süreçlerinde aktif yer alıyor, şirketlerle iletişim kurma, iş
-                birlikleri geliştirme ve organizasyon süreçlerine katkı
-                sağlıyorum.
+                Üniversitesi bünyesindeki AWS Student Builder Group at Istanbul
+                Okan University’de Sponsorluk Ekibi’nde görev alıyorum. Bu rol
+                kapsamında etkinlikler için sponsorluk süreçlerinde aktif yer
+                alıyor, şirketlerle iletişim kurma, iş birlikleri geliştirme ve
+                organizasyon süreçlerine katkı sağlıyorum.
               </p>
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
                 Yeni teknolojileri takip etmek, farklı projeler üzerinde

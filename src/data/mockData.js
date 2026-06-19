@@ -7,15 +7,36 @@ export const skills = [
   {
     category: "Frontend",
     items: [
-      { name: "HTML5", level: 95, icon: "devicon-html5-plain colored" },
-      { name: "CSS3", level: 90, icon: "devicon-css3-plain colored" },
+      {
+        name: "TypeScript",
+        level: 85,
+        icon: "devicon-typescript-plain colored",
+      },
       {
         name: "JavaScript",
-        level: 85,
+        level: 90,
         icon: "devicon-javascript-plain colored",
       },
-      { name: "React.js", level: 80, icon: "devicon-react-plain colored" },
-      { name: "Vue.js", level: 85, icon: "devicon-vuejs-plain colored" },
+      {
+        name: "React.js",
+        level: 85,
+        icon: "devicon-react-plain colored",
+      },
+      {
+        name: "Next.js",
+        level: 85,
+        icon: "devicon-nextjs-plain colored",
+      },
+      {
+        name: "Vue.js",
+        level: 85,
+        icon: "devicon-vuejs-plain colored",
+      },
+      {
+        name: "Nuxt.js",
+        level: 80,
+        icon: "devicon-nuxtjs-plain colored",
+      },
       {
         name: "TailwindCSS",
         level: 90,
@@ -23,39 +44,71 @@ export const skills = [
       },
     ],
   },
+
   {
     category: "Backend",
     items: [
       {
-        name: "Node.js",
-        level: 75,
-        icon: "devicon-nodejs-plain-wordmark colored",
-      },
-      { name: "C#", level: 85, icon: "devicon-csharp-plain colored" },
-      {
-        name: "ASP .NET Core MVC",
+        name: "ASP.NET Core",
         level: 90,
         icon: "devicon-dotnetcore-plain colored",
       },
       {
-        name: "SQL",
+        name: "C#",
+        level: 90,
+        icon: "devicon-csharp-plain colored",
+      },
+      {
+        name: "Node.js",
+        level: 85,
+        icon: "devicon-nodejs-plain-wordmark colored",
+      },
+      {
+        name: "NestJS",
         level: 80,
+        icon: "devicon-nestjs-plain colored",
+      },
+      {
+        name: "SQL Server",
+        level: 85,
         icon: "devicon-microsoftsqlserver-plain-wordmark colored",
       },
     ],
   },
+
   {
     category: "Tools",
     items: [
-      { name: "Git", level: 80, icon: "devicon-git-plain colored" },
-      { name: "GitHub", level: 85, icon: "devicon-github-plain colored" },
-      { name: "VS Code", level: 95, icon: "devicon-vscode-plain colored" },
+      {
+        name: "Git",
+        level: 90,
+        icon: "devicon-git-plain colored",
+      },
+      {
+        name: "GitHub",
+        level: 90,
+        icon: "devicon-github-original",
+      },
+      {
+        name: "VS Code",
+        level: 95,
+        icon: "devicon-vscode-plain colored",
+      },
       {
         name: "Visual Studio",
         level: 95,
         icon: "devicon-visualstudio-plain colored",
       },
-      { name: "Figma", level: 70, icon: "devicon-figma-plain colored" },
+      {
+        name: "Postman",
+        level: 85,
+        icon: "devicon-postman-plain colored",
+      },
+      {
+        name: "Figma",
+        level: 70,
+        icon: "devicon-figma-plain colored",
+      },
     ],
   },
 ];
@@ -64,10 +117,10 @@ export const experiences = [
   {
     id: 1,
     title: "Core Team Member",
-    company: "AWS Cloud Club Okan University",
+    company: "AWS Student Builder Group at Istanbul Okan University",
     period: "Şubat 2026 - Halen",
     description:
-      "AWS Cloud Club bünyesinde sponsorluk ekibinde aktif rol alarak, etkinlikler için şirketlerle iletişim kurma, iş birlikleri geliştirme ve sponsorluk süreçlerini yönetme sorumluluğunu üstleniyorum.",
+      "AWS Student Builder Group  bünyesinde sponsorluk ekibinde aktif rol alarak, etkinlikler için şirketlerle iletişim kurma, iş birlikleri geliştirme ve sponsorluk süreçlerini yönetme sorumluluğunu üstleniyorum.",
     type: "work",
     technologies: [
       "AWS Cloud",
@@ -157,6 +210,12 @@ export const experiences = [
 ];
 
 export const certificates = [
+  {
+    name: "Yükseköğretimde Yapay Zeka Teknolojileri Konferansı",
+    issuer: "COMMUNITY PROGRAM MANAGER AWS STUDENT BUILDER",
+    date: "21 Nisan 2026",
+    credentialId: "AWS Student Builder Group at Istanbul Okan University",
+  },
   {
     name: "Yükseköğretimde Yapay Zeka Teknolojileri Konferansı",
     issuer: "İstanbul Okan Üniversitesi",
