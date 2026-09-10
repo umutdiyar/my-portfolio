@@ -2,6 +2,8 @@ import eCommerceApp from "../assets/eCommerce-webApp-Screenshot.png";
 import weatherApp from "../assets/weatherApp.png";
 import myPortfolio from "../assets/my-portfolio-photo.png";
 import pulseBoard from "../assets/pulseboard.png";
+import akbulutInsaat from "../assets/akbulut-insaat.png";
+import carmenOutdoor from "../assets/carmen-outdoor.png";
 
 export const skills = [
   {
@@ -254,10 +256,41 @@ export const projects = [
       "PostgreSQL",
       "Docker",
     ],
-    category: "Ongoing",
+    category: "Full Stack",
+    status: "Ongoing",
   },
+
   {
     id: 2,
+    title: "Akbulut İnşaat & Boya",
+    description:
+      "Kayseri’de yapı malzemeleri alanında faaliyet gösteren Akbulut İnşaat & Boya için; ürün grupları, çözüm ortakları, bölge temsilcileri ve iletişim bilgilerini kullanıcı dostu bir yapıda sunan responsive kurumsal web sitesi.",
+    image: akbulutInsaat,
+    github: null,
+    demo: "https://akbulutinsaat.com.tr/",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "ShadcnUi",
+      "Motion",
+      "Lucide React",
+    ],
+    category: "Frontend",
+  },
+  {
+    id: 3,
+    title: "Carmen Outdoor",
+    description:
+      "Dış mekân mobilyaları üreten Carmen Outdoor için; ürün kategorileri, koleksiyonlar, kurumsal içerikler ve çoklu dil desteği sunan modern ve responsive kurumsal web sitesi.",
+    image: carmenOutdoor,
+    github: null,
+    demo: "https://carmenoutdoor.com/tr",
+    technologies: ["Next.js", "TailwindCSS", "i18n", "Lucide React", "Axios"],
+    category: "Frontend",
+  },
+
+  {
+    id: 4,
     title: "Portfolyo Web Uygulaması",
     description:
       "React.js ile geliştirdiğim kişisel portfolyo web sitesi. Kişisel projelerimi ve becerilerimi sergileyen animasyonlar, responsive tasarım odaklı modern bir web sayfasıdır.",
@@ -275,7 +308,7 @@ export const projects = [
     category: "Frontend",
   },
   {
-    id: 3,
+    id: 5,
     title: "Hava Durumu Web Uygulaması",
     description:
       "APİ entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
@@ -292,7 +325,7 @@ export const projects = [
     category: "Frontend",
   },
   {
-    id: 4,
+    id: 6,
     title: "Film Arama Web Uygulaması",
     description:
       "React ile geliştirdiğim modern ve kullanıcı dostu bir film arama uygulaması. Gerçek zamanlı arama ve filtreleme özellikleri sunar.",
@@ -310,7 +343,7 @@ export const projects = [
     category: "Frontend",
   },
   {
-    id: 5,
+    id: 7,
     title: "E-Ticaret Web Uygulaması",
     description:
       "Kendi geliştirdiğim HTML, CSS, JavaScript ve C# tabanlı e-ticaret uygulaması. Ürünleri görüntüleyip sepete eklemeye olanak tanır ve temel e-ticaret işleyişini öğretir.",

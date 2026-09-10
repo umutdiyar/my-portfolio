@@ -69,15 +69,17 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4 flex justify-between">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors duration-200"
-                      aria-label="GitHub Repository"
-                    >
-                      <Github size={20} />
-                    </a>
+                    {project.github && project.github !== "#" && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors duration-200"
+                        aria-label="GitHub Repository"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
                     {project.demo && project.demo !== "#" && (
                       <a
                         href={project.demo}
@@ -94,16 +96,28 @@ function Projects() {
               </div>
 
               <CardContent className="p-6 flex flex-col justify-between h-full">
-                <div className="flex justify-between items-start">
+                <div className="flex justify-between items-start gap-3">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <Badge
-                    variant="secondary"
-                    className="bg-gradient-to-r from-teal-100 to-green-100 dark:from-teal-900 dark:to-green-900 text-teal-800 dark:text-teal-200"
-                  >
-                    {project.category}
-                  </Badge>
+
+                  <div className="flex flex-wrap justify-end gap-2">
+                    <Badge
+                      variant="secondary"
+                      className="bg-gradient-to-r from-teal-100 to-green-100 dark:from-teal-900 dark:to-green-900 text-teal-800 dark:text-teal-200"
+                    >
+                      {project.category}
+                    </Badge>
+
+                    {project.status && (
+                      <Badge
+                        variant="secondary"
+                        className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200"
+                      >
+                        {project.status}
+                      </Badge>
+                    )}
+                  </div>
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -123,21 +137,24 @@ function Projects() {
                 </div>
 
                 <div className="flex space-x-3">
-                  <Button
-                    asChild
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 mt-0.5 dark:bg-transparent dark:hover:bg-gray-900"
-                  >
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {project.github && (
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 mt-0.5 dark:bg-transparent dark:hover:bg-gray-900"
                     >
-                      <Github className="mr-2" size={16} />
-                      Code
-                    </a>
-                  </Button>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-2" size={16} />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+
                   {project.demo && project.demo !== "#" && (
                     <Button
                       asChild
@@ -150,7 +167,7 @@ function Projects() {
                         className="flex items-center justify-center"
                       >
                         <ExternalLink className="mr-2" size={16} />
-                        Demo
+                        Siteyi Gör
                       </a>
                     </Button>
                   )}
