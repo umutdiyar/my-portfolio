@@ -118,9 +118,27 @@ export const skills = [
 export const experiences = [
   {
     id: 1,
+    title: "Yazılım Ar-Ge Stajyeri",
+    company: "Experilabs (SahaBT Yazılım)",
+    period: "Eylül 2026 - Devam Ediyor",
+    description:
+      "Kurumsal yazılım ürünlerinin Ar-Ge, test ve geliştirme süreçlerinde görev alıyor; web uygulamaları, API iletişimi ve veri yönetimi üzerine teknik analiz çalışmaları gerçekleştiriyorum. Yazılım geliştirme ekipleriyle iş birliği içerisinde kurumsal ürün geliştirme süreçlerinde deneyim kazanıyorum.",
+    type: "work",
+    technologies: [
+      "Software R&D",
+      "Software Testing",
+      "REST API",
+      "API Analysis",
+      "Data Management",
+      "Technical Analysis",
+      "Teamwork",
+    ],
+  },
+  {
+    id: 2,
     title: "Core Team Member",
     company: "AWS Student Builder Group at Istanbul Okan University",
-    period: "Şubat 2026 - Halen",
+    period: "Şubat 2026 - Devam Ediyor",
     description:
       "AWS Student Builder Group  bünyesinde sponsorluk ekibinde aktif rol alarak, etkinlikler için şirketlerle iletişim kurma, iş birlikleri geliştirme ve sponsorluk süreçlerini yönetme sorumluluğunu üstleniyorum.",
     type: "work",
@@ -133,9 +151,8 @@ export const experiences = [
       "Communication",
     ],
   },
-
   {
-    id: 2,
+    id: 3,
     title: "Core Team Member",
     company: "GDG On Campus Istanbul Okan University",
     period: "Eylül 2025 - Şubat 2026",
@@ -150,7 +167,7 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "BT Destek Uzmanı",
     company: "Omreon Bilişim Teknolojileri",
     period: "Temmuz 2024 - Ekim 2024",
@@ -160,7 +177,7 @@ export const experiences = [
     technologies: ["System Administration", "Windows Server", "Network"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Stajyer Yazılım Geliştirici",
     company: "Beezsoft Yazılım Danışmanlık",
     period: "Eylül 2023 - Haziran 2024",
@@ -177,10 +194,10 @@ export const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Bilgisayar Programcılığı",
     company: "Okan Üniversitesi",
-    period: "Eylül 2025 - Halen",
+    period: "Eylül 2025 - Devam Ediyor",
     description:
       "Web geliştirme, kullanıcı arayüz tasarımı, algoritma tasarımı, veri yapıları ve nesne yönelimli programlama konularında eğitim alıyorum.",
     type: "education",
@@ -193,7 +210,7 @@ export const experiences = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Bilişim Teknolojileri - Yazılım Geliştirme",
     company: "Tuzla Mesleki ve Teknik Anadolu Lisesi",
     period: "Eylül 2020 - Haziran 2024",
@@ -311,7 +328,7 @@ export const projects = [
     id: 5,
     title: "Hava Durumu Web Uygulaması",
     description:
-      "APİ entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
+      "API entegrasyonu ile kendi geliştirdiğim modern bir hava durumu uygulaması. Kullanıcılar herhangi bir şehrin güncel hava durumunu kolayca görüntüleyebilir.",
     image: weatherApp,
     github: "https://github.com/umutdiyar/weather-app",
     demo: "https://weather-app-umutdiyar.vercel.app/",

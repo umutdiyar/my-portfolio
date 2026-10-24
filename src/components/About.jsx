@@ -25,28 +25,38 @@ function About() {
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Merhaba! Ben Umut Diyar Balcı, web geliştirme alanında kendini
-                sürekli geliştiren bir yazılım geliştiricisiyim. Okan
+                Merhaba! Ben Umut Diyar Balcı, yazılım geliştirmeye olan ilgim,
+                Tuzla Mesleki ve Teknik Anadolu Lisesi'nde aldığım Yazılım
+                Geliştirme eğitimiyle başladı. Şu anda İstanbul Okan
                 Üniversitesi Bilgisayar Programcılığı bölümünde eğitimime devam
-                ederken aynı zamanda pratik deneyimlerimi aktif olarak
-                artırıyorum.
-              </p>
+                ediyor, modern web teknolojileri ve Full Stack Development
+                alanında kendimi geliştiriyorum.
+              </p>{" "}
+              <br />
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Frontend teknolojileri tarafında özellikle React.js ve Vue.js
-                üzerine odaklanıyor, modern ve kullanıcı odaklı web uygulamaları
-                geliştirmeye önem veriyorum. Temiz kod yazımı, performans
-                optimizasyonu ve kullanıcı deneyimi benim için geliştirme
-                sürecinin temel parçalarıdır. Aynı zamanda, şu anda Okan
-                Üniversitesi bünyesindeki AWS Student Builder Group at Istanbul
-                Okan University’de Sponsorluk Ekibi’nde görev alıyorum. Bu rol
-                kapsamında etkinlikler için sponsorluk süreçlerinde aktif yer
-                alıyor, şirketlerle iletişim kurma, iş birlikleri geliştirme ve
-                organizasyon süreçlerine katkı sağlıyorum.
+                React, Next.js, Vue.js, Nuxt.js, TypeScript, C# ve ASP.NET Core
+                gibi teknolojilerle kullanıcı odaklı, sürdürülebilir ve
+                ölçeklenebilir web uygulamaları geliştirmeye odaklanıyorum.
+                Yazılım geliştirme sürecinde yalnızca çalışan bir ürün ortaya
+                koymayı değil; temiz kod, sürdürülebilir mimari, performans ve
+                kullanıcı deneyimini de ön planda tutuyorum. Beezsoft'ta
+                frontend geliştirme, Omreon Bilişim Teknolojileri bünyesinde
+                kurumsal BT destek süreçlerinde deneyim kazandım. Şu anda
+                Experilabs'te Yazılım Ar-Ge Stajyeri olarak kurumsal yazılım
+                ürünlerinin Ar-Ge, test ve geliştirme süreçlerinde yer alıyor;
+                API iletişimi, veri yönetimi ve teknik analiz alanlarında
+                deneyimimi genişletiyorum. Teknik çalışmalarımın yanında AWS
+                Student Builder Group at Istanbul Okan University topluluğunun
+                sponsorluk ekibinde aktif rol alarak kurumsal iş birlikleri,
+                organizasyon ve ekip çalışması süreçlerine katkı sağlıyorum.
               </p>
+              <br />
               <p className="text-gray-700 leading-relaxed dark:text-gray-300">
-                Yeni teknolojileri takip etmek, farklı projeler üzerinde
-                çalışmak ve kendimi sürekli geliştirmek motivasyonumun temelini
-                oluşturuyor.
+                Yeni teknolojileri keşfetmeyi, karşılaştığım problemler için
+                etkili çözümler üretmeyi ve öğrendiklerimi gerçek projelere
+                dönüştürmeyi önemsiyorum. Uzun vadede frontend ve backend
+                geliştirme alanlarındaki yetkinliklerimi derinleştirerek uçtan
+                uca yazılım çözümleri geliştirmeyi hedefliyorum.
               </p>
             </div>
           </div>
