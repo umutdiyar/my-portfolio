@@ -1,0 +1,61 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 2rem;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+#projects .project-card {
+  animation: projectFadeInUp .6s ease-out backwards;
+  animation-delay: var(--project-delay, 0s);
+  transition: scale .3s ease, box-shadow .3s ease;
+}
+#projects .project-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+#projects .project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform .3s ease;
+}
+
+#projects .project-image-contained { object-fit: contain; }
+#projects .project-image-cover {
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+#projects :is(a, button):focus-visible {
+  outline: 3px solid #9333ea;
+  outline-offset: 3px;
+}
+
+#projects .project-actions a {
+  white-space: normal;
+  height: auto;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+@media (hover: hover) and (pointer: fine) {
+  #projects .project-card:hover {
+    scale: 1.02;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+  }
+  #projects .project-card:hover .project-image img { transform: scale(1.1); }
+}
+@keyframes projectFadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #projects *, #projects *::before, #projects *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  #projects .project-card:hover { scale: none; }
+  #projects .project-card:hover .project-image img { transform: none; }
+}
