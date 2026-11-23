@@ -1,3 +1,5 @@
+import sponsorFlowCover from "../assets/sponsorflow-login.png";
+
 import eCommerceApp from "../assets/eCommerce-webApp-Screenshot.png";
 import weatherApp from "../assets/weatherApp.png";
 import myPortfolio from "../assets/my-portfolio-photo.png";
@@ -257,6 +259,18 @@ export const certificates = [
 ];
 
 export const projects = [
+  {
+    id: 8,
+    title: "SponsorFlow",
+    description:
+      "SponsorFlow, üniversite topluluklarının firmalarla yürüttüğü sponsorluk süreçlerini yöneten bir CRM uygulamasıdır. Firma bazında sorumluluk atama, görüşme geçmişini izleme ve takip planlaması özellikleriyle ekipler arası devir teslimi ve sponsorluk ilişkilerinin sürekliliğini destekler.",
+    image: sponsorFlowCover,
+    imageFit: "contain",
+    github: "https://github.com/umutdiyar/sponsorflow",
+    demo: null,
+    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Supabase"],
+    category: "Full Stack",
+  },
   {
     id: 1,
     title: "PulseBoard",
